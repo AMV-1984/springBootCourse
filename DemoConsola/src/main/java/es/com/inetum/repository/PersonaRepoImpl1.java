@@ -15,7 +15,7 @@ public class PersonaRepoImpl1 implements IPersona {
 
 	@Override
 	public void registrar(String pNombre) {
-		log.info("Se registró " + pNombre);
+		log.info("Se registró {}", pNombre);
 
 	}
 

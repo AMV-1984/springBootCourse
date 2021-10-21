@@ -15,8 +15,6 @@ import es.com.inetum.service.IPersonaServiceImpl;
 @SpringBootApplication
 public class DemoConsolaApplication implements CommandLineRunner{
 	
-	private static Logger log = LoggerFactory.getLogger(DemoConsolaApplication.class);
-	
 	@Autowired
 	private IPersonaService service;
 
@@ -27,7 +25,6 @@ public class DemoConsolaApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		//service = new IPersonaServiceImpl();
 		service.registrarHandler("Alvaro");
 
 	}
