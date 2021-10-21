@@ -1,17 +1,18 @@
 package com.domain.modelo.dao;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import com.domain.modelo.Model;
 
 public interface DAO {
 	
-	abstract void agregar(Model m);
+	public void agregar(Model m) throws ClassNotFoundException, SQLException;
 	
-	abstract void modificar(Model m);
+	public void modificar(Model m) throws ClassNotFoundException, SQLException;
 	
-	abstract void eliminar(Model m);
+	public void eliminar(Model m) throws ClassNotFoundException, SQLException;
 	
-	abstract List<Model> leer(Model m);
+	public List<Model> leer(Model m) throws ClassNotFoundException, SQLException;
 
 }
