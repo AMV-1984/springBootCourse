@@ -12,7 +12,7 @@ public class Usuario {
 	@GeneratedValue
 	private int codigo;
 	
-	@Column(name="USU_CLAVE", length = 16)
+	@Column(name="USU_CLAVE", length = 150)
 	private String clave;
 	
 	@Column(name="USU_NOMBRE", length = 50)
@@ -20,7 +20,7 @@ public class Usuario {
 	
 	public Usuario() {}
 
-	public Usuario(int codigo, String clave, String nombre) {
+	public Usuario(int codigo, String nombre, String clave) {
 		super();
 		this.codigo = codigo;
 		this.clave = clave;
